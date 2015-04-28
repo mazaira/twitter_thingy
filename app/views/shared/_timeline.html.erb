@@ -1,0 +1,15 @@
+<div class = 'timeline'>
+  <table >
+      <tr><h1 class = 'timeline_header'>Timeline </h1></tr>
+    <tbody>    
+      <% @tweets.each do |tweet| %>
+        <tr>
+          <td><strong><%= tweet.user.name %></strong></td>
+        </tr>
+        <tr class='border_bottom'>
+          <td><%= tweet.body %></td>
+        </tr>
+      <% end %>   
+    </tbody>
+  </table>
+</div>

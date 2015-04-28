@@ -1,0 +1,9 @@
+<div class ='create_tweets'>
+  <%= form_for(@tweet) do |f| %>
+    <div class='field'>
+      <%= f.text_area :body, placeholder: 'Enter a tweet...' %>
+    </div>
+    <%= f.submit 'Tweet', class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
